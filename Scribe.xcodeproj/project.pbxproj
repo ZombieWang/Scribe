@@ -12,6 +12,8 @@
 		01C3960B1E40602D0001EBB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C396091E40602D0001EBB1 /* Main.storyboard */; };
 		01C3960D1E40602D0001EBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C3960C1E40602D0001EBB1 /* Assets.xcassets */; };
 		01C396101E40602D0001EBB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C3960E1E40602D0001EBB1 /* LaunchScreen.storyboard */; };
+		01C3961C1E4063230001EBB1 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3961B1E4063230001EBB1 /* CircleButton.swift */; };
+		01C3961E1E40696B0001EBB1 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 01C3961D1E40696B0001EBB1 /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		01C3960C1E40602D0001EBB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01C3960F1E40602D0001EBB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01C396111E40602D0001EBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01C3961B1E4063230001EBB1 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		01C3961D1E40696B0001EBB1 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		01C396041E40602D0001EBB1 /* Scribe */ = {
 			isa = PBXGroup;
 			children = (
-				01C396051E40602D0001EBB1 /* AppDelegate.swift */,
-				01C396071E40602D0001EBB1 /* ViewController.swift */,
-				01C396091E40602D0001EBB1 /* Main.storyboard */,
-				01C3960C1E40602D0001EBB1 /* Assets.xcassets */,
-				01C3960E1E40602D0001EBB1 /* LaunchScreen.storyboard */,
-				01C396111E40602D0001EBB1 /* Info.plist */,
+				01C396191E4062A90001EBB1 /* Model */,
+				01C396181E4062A20001EBB1 /* View */,
+				01C396171E4062870001EBB1 /* Controller */,
+				01C3961A1E4062E40001EBB1 /* Resources */,
 			);
 			path = Scribe;
+			sourceTree = "<group>";
+		};
+		01C396171E4062870001EBB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01C396051E40602D0001EBB1 /* AppDelegate.swift */,
+				01C396071E40602D0001EBB1 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		01C396181E4062A20001EBB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01C396091E40602D0001EBB1 /* Main.storyboard */,
+				01C3960E1E40602D0001EBB1 /* LaunchScreen.storyboard */,
+				01C3961B1E4063230001EBB1 /* CircleButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		01C396191E4062A90001EBB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		01C3961A1E4062E40001EBB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01C3960C1E40602D0001EBB1 /* Assets.xcassets */,
+				01C396111E40602D0001EBB1 /* Info.plist */,
+				01C3961D1E40696B0001EBB1 /* test.m4a */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C3961E1E40696B0001EBB1 /* test.m4a in Resources */,
 				01C396101E40602D0001EBB1 /* LaunchScreen.storyboard in Resources */,
 				01C3960D1E40602D0001EBB1 /* Assets.xcassets in Resources */,
 				01C3960B1E40602D0001EBB1 /* Main.storyboard in Resources */,
@@ -137,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C3961C1E4063230001EBB1 /* CircleButton.swift in Sources */,
 				01C396081E40602D0001EBB1 /* ViewController.swift in Sources */,
 				01C396061E40602D0001EBB1 /* AppDelegate.swift in Sources */,
 			);
@@ -264,7 +304,7 @@
 				DEVELOPMENT_TEAM = ENT2ZH45DM;
 				INFOPLIST_FILE = Scribe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZombieWang.Scribe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZombieWang.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -277,7 +317,7 @@
 				DEVELOPMENT_TEAM = ENT2ZH45DM;
 				INFOPLIST_FILE = Scribe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZombieWang.Scribe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZombieWang.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
